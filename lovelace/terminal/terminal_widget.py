@@ -30,7 +30,7 @@ class TerminalWidget(QWidget):
         self.stream = pyte.Stream(self.screen)
 
         # PTY process — always starts the system shell
-        shell = os.environ.get("SHELL", "/bin/bash")
+        shell = "/bin/bash"
         self.pty = PTYProcess(command=[shell])
         self.pty.data_received.connect(self.on_data_received)
         self.pty.process_exited.connect(self.on_process_exited)
@@ -296,7 +296,7 @@ class TerminalWidget(QWidget):
         self._sel_start = None
         self._sel_end   = None
 
-        shell = os.environ.get("SHELL", "/bin/bash")
+        shell = "/bin/bash"
         self.pty = PTYProcess(command=[shell])
         self.pty.data_received.connect(self.on_data_received)
         self.pty.process_exited.connect(self.on_process_exited)

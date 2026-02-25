@@ -12,9 +12,10 @@ class PTYProcess(QThread):
 
     def __init__(self, command=None, env=None):
         super().__init__()
-        shell = os.environ.get("SHELL", "/bin/bash")
+        shell = "/bin/bash"
         self.command = command or [shell]
         self.env = env or os.environ.copy()
+        self.env["TERM"] = "xterm-256color"
         self.process = None
         self.running = False
 
