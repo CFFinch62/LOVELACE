@@ -1,0 +1,68 @@
+V "GNAT Lib v14"
+M P W=b
+P ZX
+
+RN
+RV NO_IO
+RV NO_DYNAMIC_SIZED_OBJECTS
+
+U procedures%b		procedures.adb		f355cbf3 NE OO SU
+W ada%s			ada.ads			ada.ali
+W ada.integer_text_io%s	a-inteio.ads		a-inteio.ali
+Z ada.strings.text_buffers%s  a-sttebu.adb	a-sttebu.ali
+W ada.text_io%s		a-textio.adb		a-textio.ali
+Z system.concat_3%s	s-conca3.adb		s-conca3.ali
+
+D ada.ads		20240801081713 76789da1 ada%s
+D a-except.ads		20240801081713 e7970cd9 ada.exceptions%s
+D a-inteio.ads		20240801081713 f64b89a4 ada.integer_text_io%s
+D a-ioexce.ads		20240801081713 40018c65 ada.io_exceptions%s
+D a-stream.ads		20240801081713 119b8fb3 ada.streams%s
+D a-string.ads		20240801081713 90ac6797 ada.strings%s
+D a-sttebu.ads		20240801081713 f1ad67a2 ada.strings.text_buffers%s
+D a-stuten.ads		20240801081713 c6ced0ae ada.strings.utf_encoding%s
+D a-tags.ads		20240801081713 9eaa38c6 ada.tags%s
+D a-textio.ads		20240801081713 34ef47de ada.text_io%s
+D a-tiinio.ads		20240801081713 76699c8f ada.text_io.integer_io%s
+D a-unccon.ads		20240801081713 0e9b276f ada.unchecked_conversion%s
+D interfac.ads		20240801081713 9111f9c1 interfaces%s
+D i-cstrea.ads		20240801081713 ffd01b9d interfaces.c_streams%s
+D procedures.adb	20260225002108 31f10589 procedures%b
+D system.ads		20240801081714 14286b0f system%s
+D s-conca3.ads		20240801081713 8a7a19a2 system.concat_3%s
+D s-crtl.ads		20240801081713 beb39b9e system.crtl%s
+D s-exctab.ads		20240801081713 91bef6ef system.exception_table%s
+D s-ficobl.ads		20240801081713 dc5161d4 system.file_control_block%s
+D s-parame.ads		20250315014742 a1aeab5c system.parameters%s
+D s-putima.ads		20240801081713 17291fe4 system.put_images%s
+D s-secsta.ads		20240801081713 578279f5 system.secondary_stack%s
+D s-soflin.ads		20240801081713 df77073e system.soft_links%s
+D s-stache.ads		20240801081713 0b81c1fe system.stack_checking%s
+D s-stalib.ads		20240801081713 1c9580f6 system.standard_library%s
+D s-stoele.ads		20240801081713 ccded4e8 system.storage_elements%s
+D s-traent.ads		20240801081713 c81cbf8c system.traceback_entries%s
+D s-unstyp.ads		20240801081713 fa2a7f59 system.unsigned_types%s
+D s-wchcon.ads		20240801081714 d9032363 system.wch_con%s
+G a e
+G c Z b b [procedures standard 4 11 none]
+X 1 ada.ads
+16K9*Ada 20e8 15|1r6 1r23 2r6 2r31
+X 3 a-inteio.ads
+18K13*Integer_Text_IO[11|46] 15|2w10 2r35
+X 10 a-textio.ads
+58K13*Text_IO 785e16 15|1w10 1r27
+89I12*Field{integer}
+284U14*New_Line 15|25s4
+515U14*Put 15|23s4
+565U14*Put_Line 15|9s7
+X 11 a-tiinio.ads
+85U14*Put 15|24s4[3|18]
+87i7 Width{10|89I12} 15|24r16[3|18]
+X 15 procedures.adb
+4U11*Procedures 4b11 26l5 26t15
+7U14 Greet 7b14 7>21 10l8 10t13 20s4
+7a21 Name{string} 9r28
+13V13 Square{integer} 13b13 13>21 16l8 16t14 22s14
+13i21 N{integer} 15r14 15r18
+18i4 Result{integer} 22m4 24r8
+
